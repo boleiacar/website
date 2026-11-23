@@ -4,7 +4,23 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Landing page for **Boleia**, a ride-sharing app for Angola. No code or tech stack exists yet. Update this file with build, lint and test commands once the project is scaffolded.
+"Coming soon" landing page for **Boleia**, a ride-sharing app for Angola. It is a single-page Vite + Vue 3 + TypeScript app with Tailwind CSS v4, built as a static site. There is no backend and no forms. The design and plan are in `docs/superpowers/`.
+
+## Commands
+
+Use pnpm.
+
+- `pnpm dev`: dev server
+- `pnpm build`: type-check (`vue-tsc`) and production build to `dist/`
+- `pnpm preview`: serve the production build
+- `pnpm test --run`: all tests once (Vitest + jsdom). For a single file: `pnpm vitest run src/path/file.spec.ts`
+- `pnpm lint` / `pnpm format`
+
+## Code layout
+
+- `src/App.vue` stacks the page sections. Each section is a component in `src/components/sections/`. The phone mockups (app screens rebuilt in Vue, sample data only) are in `src/components/phone/`.
+- Every visible string lives in `src/i18n/pt.ts` and `src/i18n/en.ts`. The two files must have identical key trees, which a test enforces. Portuguese is the default; the chosen language is kept in `localStorage['boleia-locale']`.
+- Design tokens are mapped into Tailwind in `src/assets/main.css` (`bg-primary`, `text-on-primary`, `bg-surface`, `border-border`, `text-muted`…). Assets are imported straight from the design system via the `@ds` alias (`@ds/assets/...`); don't copy them into `src/`.
 
 ## Content source
 
