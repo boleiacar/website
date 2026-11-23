@@ -52,4 +52,10 @@ describe('HowItWorks', () => {
   it('section has the #como anchor', () => {
     expect(mount(HowItWorks, { global }).find('section#como').exists()).toBe(true)
   })
+
+  it('phone column can shrink below the phone width on small screens', () => {
+    // a flex item's automatic min-width would keep the 340px phone from fitting a 360px screen
+    const phone = mount(HowItWorks, { global }).find('[role="img"]')
+    expect(phone.element.parentElement!.classList.contains('min-w-0')).toBe(true)
+  })
 })

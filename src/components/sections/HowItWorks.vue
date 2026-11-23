@@ -60,7 +60,7 @@ const roles: Role[] = ['passenger', 'driver']
       </TabsContent>
     </Tabs>
 
-    <div class="mx-auto flex flex-[0_1_360px] justify-center">
+    <div class="mx-auto flex min-w-0 flex-[0_1_360px] justify-center">
       <PhoneFrame :label="t(role === 'passenger' ? 'phone.searchTitle' : 'phone.publishTitle')">
         <PassengerHomeScreen v-if="role === 'passenger'" />
         <DriverFareScreen v-else />
