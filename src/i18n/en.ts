@@ -11,6 +11,7 @@ const en: Messages = {
     benefits: 'Benefits',
     safety: 'Safety',
     language: 'Language',
+    menu: 'Menu',
   },
   hero: {
     eyebrow: 'Coming soon to Angola',

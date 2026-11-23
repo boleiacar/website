@@ -9,6 +9,7 @@ const pt = {
     benefits: 'Vantagens',
     safety: 'Segurança',
     language: 'Idioma',
+    menu: 'Menu',
   },
   hero: {
     eyebrow: 'Em breve em Angola',
