@@ -66,4 +66,11 @@ describe('HowItWorks', () => {
     expect(w.find('[role="tablist"]').classes()).toContain('w-full')
     for (const t of w.findAll('[role="tab"]')) expect(t.classes()).toContain('flex-1')
   })
+
+  it('step text and tab labels can wrap at large font sizes', () => {
+    const w = mount(HowItWorks, { global })
+    for (const text of w.findAll('ol li > span:last-child'))
+      expect(text.classes()).toContain('min-w-0')
+    for (const t of w.findAll('[role="tab"]')) expect(t.classes()).toContain('whitespace-normal')
+  })
 })

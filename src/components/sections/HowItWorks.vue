@@ -37,7 +37,7 @@ const roles: Role[] = ['passenger', 'driver']
             v-for="r in roles"
             :key="r"
             :value="r"
-            class="min-h-11 flex-1 rounded-md px-3 text-[15px] sm:flex-none sm:px-5 text-fg data-[state=active]:bg-primary data-[state=active]:font-semibold data-[state=active]:text-on-primary"
+            class="min-h-11 flex-1 rounded-md px-3 py-1.5 whitespace-normal sm:whitespace-nowrap text-[15px] sm:flex-none sm:px-5 text-fg data-[state=active]:bg-primary data-[state=active]:font-semibold data-[state=active]:text-on-primary"
           >
             {{ t(r === 'passenger' ? 'how.tabPassenger' : 'how.tabDriver') }}
           </TabsTrigger>
@@ -57,7 +57,7 @@ const roles: Role[] = ['passenger', 'driver']
                 aria-hidden="true"
                 >{{ i + 1 }}</span
               >
-              <span class="flex flex-col gap-1">
+              <span class="flex min-w-0 flex-col gap-1 break-words">
                 <strong class="text-lg font-semibold">{{ s.t }}</strong>
                 <span class="leading-normal text-muted">{{ s.d }}</span>
               </span>

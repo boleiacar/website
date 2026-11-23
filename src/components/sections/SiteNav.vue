@@ -12,9 +12,12 @@ const links = [
   { href: '#seguranca', key: 'nav.safety' },
 ]
 const open = ref(false)
+const menuButton = ref<HTMLButtonElement | null>(null)
 
 function onKey(e: KeyboardEvent) {
-  if (e.key === 'Escape') open.value = false
+  if (e.key !== 'Escape' || !open.value) return
+  open.value = false
+  menuButton.value?.focus()
 }
 onMounted(() => document.addEventListener('keydown', onKey))
 onBeforeUnmount(() => document.removeEventListener('keydown', onKey))
@@ -22,7 +25,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKey))
 
 <template>
   <nav class="relative">
-    <div class="container-page flex items-center gap-6 py-5 md:gap-8 md:py-7">
+    <div class="container-page flex flex-wrap items-center gap-x-6 gap-y-3 py-5 md:gap-8 md:py-7">
       <a href="/" class="shrink-0"
         ><img :src="wordmark" alt="Boleia" class="h-8 w-auto lg:h-9"
       /></a>
@@ -38,6 +41,7 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKey))
       <div class="ml-auto flex items-center gap-2 md:ml-0">
         <LanguageSwitch />
         <button
+          ref="menuButton"
           type="button"
           class="flex size-11 cursor-pointer items-center justify-center rounded-full border border-border-strong text-fg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fg md:hidden"
           :aria-label="t('nav.menu')"

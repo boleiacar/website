@@ -14,7 +14,7 @@ const items = [
 <template>
   <section class="border-y border-border">
     <ul
-      class="container-page m-0 grid list-none grid-cols-2 gap-x-6 gap-y-4 py-5 text-sm text-muted sm:text-[15px] lg:grid-cols-4 lg:py-6"
+      class="container-page m-0 grid list-none grid-cols-1 min-[22rem]:grid-cols-2 gap-x-6 gap-y-4 py-5 text-sm text-muted sm:text-[15px] lg:grid-cols-4 lg:py-6"
     >
       <li
         v-for="i in items"

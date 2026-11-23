@@ -48,4 +48,32 @@ describe('mobile menu', () => {
     expect(menuButton(w).classes()).toContain('md:hidden')
     expect(w.find(`#${menuButton(w).attributes('aria-controls')}`).classes()).toContain('md:hidden')
   })
+
+  it('Escape returns focus to the menu button', async () => {
+    const w = mount(SiteNav, { global, attachTo: document.body })
+    await menuButton(w).trigger('click')
+    const link = w.find('#mobile-menu a').element as HTMLElement
+    link.focus()
+    document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }))
+    await w.vm.$nextTick()
+    expect(document.activeElement).toBe(menuButton(w).element)
+    w.unmount()
+  })
+
+  it('Escape does nothing while the menu is closed', async () => {
+    const w = mount(SiteNav, { global, attachTo: document.body })
+    const outside = document.createElement('button')
+    document.body.appendChild(outside)
+    outside.focus()
+    document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }))
+    await w.vm.$nextTick()
+    expect(document.activeElement).toBe(outside)
+    outside.remove()
+    w.unmount()
+  })
+
+  it('nav row wraps instead of pushing the menu button off-screen at large font sizes', () => {
+    const row = mount(SiteNav, { global }).find('nav > div')
+    expect(row.classes()).toContain('flex-wrap')
+  })
 })

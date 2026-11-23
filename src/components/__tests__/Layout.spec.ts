@@ -13,9 +13,10 @@ const global = { plugins: [i18n] }
 const m = (c: Parameters<typeof mount>[0]) => mount(c, { global })
 
 describe('responsive layout contract', () => {
-  it('trust strip is 2 columns, 4 on desktop', () => {
+  it('trust strip is 1 column on very narrow or large-font screens, then 2, then 4 on desktop', () => {
+    // rem breakpoint: tracks the browser font-size setting, so large text gets one column
     expect(m(TrustStrip).find('ul').classes()).toEqual(
-      expect.arrayContaining(['grid-cols-2', 'lg:grid-cols-4']),
+      expect.arrayContaining(['grid-cols-1', 'min-[22rem]:grid-cols-2', 'lg:grid-cols-4']),
     )
   })
 
