@@ -16,9 +16,7 @@ const label = computed(() =>
   <span
     data-test="store-badge"
     class="inline-flex min-h-14 flex-col justify-center rounded-lg px-5 py-2.5 leading-tight"
-    :class="
-      variant === 'filled' ? 'bg-primary text-on-primary' : 'border border-primary text-fg'
-    "
+    :class="variant === 'filled' ? 'bg-primary text-on-primary' : 'border border-primary text-fg'"
   >
     <span class="text-[11px] font-medium" :class="variant === 'outline' && 'text-muted'">{{
       label.pre

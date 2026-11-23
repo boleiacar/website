@@ -9,7 +9,7 @@ const { t } = useI18n()
 <template>
   <footer class="border-t border-border">
     <div
-      class="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-5 px-6 py-10 text-sm text-subtle"
+      class="container-page flex flex-col items-start gap-4 py-10 text-sm text-subtle sm:flex-row sm:items-center sm:justify-between"
     >
       <img :src="wordmark" alt="Boleia" class="h-6.5 w-auto" />
       <span>{{ t('footer.languages') }}</span>

@@ -11,7 +11,9 @@ const { t } = useI18n()
       <span class="flex size-9 items-center justify-center rounded-full bg-surface">
         <ArrowLeft :size="18" />
       </span>
-      <span class="grow pr-9 text-center text-[16px] font-medium">{{ t('phone.publishTitle') }}</span>
+      <span class="grow pr-9 text-center text-[16px] font-medium">{{
+        t('phone.publishTitle')
+      }}</span>
     </div>
     <span class="text-muted">{{ t('phone.step') }}</span>
     <span class="flex gap-1.5">
@@ -22,11 +24,15 @@ const { t } = useI18n()
       <span class="text-[15px] font-medium">{{ t('phone.pricePerSeat') }}</span>
       <span class="text-[11px] text-muted">{{ t('phone.perSeat') }}</span>
       <span class="flex w-full items-center justify-between">
-        <span class="flex size-10 items-center justify-center rounded-full border border-primary text-primary">
+        <span
+          class="flex size-10 items-center justify-center rounded-full border border-primary text-primary"
+        >
           <Minus :size="18" />
         </span>
         <span class="text-[38px] font-bold text-primary">700</span>
-        <span class="flex size-10 items-center justify-center rounded-full border border-primary text-primary">
+        <span
+          class="flex size-10 items-center justify-center rounded-full border border-primary text-primary"
+        >
           <Plus :size="18" />
         </span>
       </span>

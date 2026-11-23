@@ -10,7 +10,12 @@ const props = defineProps<TabsTriggerProps & { class?: HTMLAttributes['class'] }
   <TabsTrigger
     :value="props.value"
     :disabled="props.disabled"
-    :class="cn('inline-flex cursor-pointer items-center justify-center whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fg disabled:pointer-events-none', props.class)"
+    :class="
+      cn(
+        'inline-flex cursor-pointer items-center justify-center whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fg disabled:pointer-events-none',
+        props.class,
+      )
+    "
   >
     <slot />
   </TabsTrigger>

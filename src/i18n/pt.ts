@@ -69,7 +69,10 @@ const pt = {
         t: 'SOS com localização em tempo real',
         d: 'Um toque alerta a nossa equipa, que vê onde está.',
       },
-      { t: 'Preços fixos e justos', d: 'O preço por lugar aparece antes de reservar. Sem regatear.' },
+      {
+        t: 'Preços fixos e justos',
+        d: 'O preço por lugar aparece antes de reservar. Sem regatear.',
+      },
       {
         t: 'Sem dinheiro, com segurança',
         d: 'Pagamento com cartão na app e reembolso automático se a viagem for cancelada.',

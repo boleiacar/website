@@ -7,7 +7,11 @@ const props = defineProps<TabsContentProps & { class?: HTMLAttributes['class'] }
 </script>
 
 <template>
-  <TabsContent :value="props.value" :force-mount="props.forceMount" :class="cn('outline-none', props.class)">
+  <TabsContent
+    :value="props.value"
+    :force-mount="props.forceMount"
+    :class="cn('outline-none', props.class)"
+  >
     <slot />
   </TabsContent>
 </template>

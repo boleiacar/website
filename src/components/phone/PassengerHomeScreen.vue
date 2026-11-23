@@ -20,7 +20,9 @@ const tabs = () => (tm('phone.tabs') as string[]).map((s) => rt(s))
 <template>
   <div class="flex grow flex-col gap-3.5 px-4 pt-11 text-[13px]">
     <div class="flex items-center gap-3">
-      <span class="flex size-10 items-center justify-center rounded-full bg-surface text-sm">AM</span>
+      <span class="flex size-10 items-center justify-center rounded-full bg-surface text-sm"
+        >AM</span
+      >
       <span class="flex flex-col leading-tight">
         <span class="text-[11px] text-subtle">{{ t('phone.greeting') }}</span>
         <span class="text-[15px] font-semibold">Ana Manuel</span>
@@ -44,7 +46,9 @@ const tabs = () => (tm('phone.tabs') as string[]).map((s) => rt(s))
         </span>
       </span>
       <span class="flex gap-2.5">
-        <span class="flex h-11 grow items-center gap-3 rounded-lg border border-border bg-surface px-3 text-muted">
+        <span
+          class="flex h-11 grow items-center gap-3 rounded-lg border border-border bg-surface px-3 text-muted"
+        >
           <Calendar :size="18" class="text-primary" />{{ t('phone.date') }}
         </span>
         <span class="flex h-11 items-center gap-2 rounded-lg border border-border bg-surface px-3">
@@ -76,10 +80,7 @@ const tabs = () => (tm('phone.tabs') as string[]).map((s) => rt(s))
       >
         <component :is="tabIcons[i]" :size="20" />
         {{ label }}
-        <span
-          v-if="i === 0"
-          class="absolute bottom-0 h-1 w-8 rounded-sm bg-primary"
-        ></span>
+        <span v-if="i === 0" class="absolute bottom-0 h-1 w-8 rounded-sm bg-primary"></span>
       </span>
     </div>
   </div>

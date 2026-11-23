@@ -1,6 +1,10 @@
 // Pexels 15403008 (road, landscape) and 37382237 (Luanda boulevard, portrait 3:4). Pexels licence.
 // Regenerate with scripts/make-hero-images.py.
-const files = import.meta.glob<string>('./*.{webp,jpg}', { eager: true, import: 'default', query: '?url' })
+const files = import.meta.glob<string>('./*.{webp,jpg}', {
+  eager: true,
+  import: 'default',
+  query: '?url',
+})
 
 function srcset(stem: string, ext: 'webp' | 'jpg', widths: number[]): string {
   return widths.map((w) => `${files[`./${stem}-${w}.${ext}`]} ${w}w`).join(', ')

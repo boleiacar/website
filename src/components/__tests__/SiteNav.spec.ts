@@ -17,7 +17,11 @@ describe('mobile menu', () => {
     expect(btn.attributes('aria-expanded')).toBe('true')
     const panel = w.find(`#${btn.attributes('aria-controls')}`)
     expect(panel.isVisible()).toBe(true)
-    expect(panel.findAll('a').map((a) => a.attributes('href'))).toEqual(['#como', '#vantagens', '#seguranca'])
+    expect(panel.findAll('a').map((a) => a.attributes('href'))).toEqual([
+      '#como',
+      '#vantagens',
+      '#seguranca',
+    ])
     w.unmount()
   })
 

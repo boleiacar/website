@@ -21,7 +21,12 @@ describe('lower sections', () => {
     const w = mount(SafetySection, { global })
     expect(w.find('section#seguranca').exists()).toBe(true)
     const docs = w.findAll('[data-test="doc"]').map((d) => d.text())
-    expect(docs).toEqual(['BI', 'Carta de condução', 'Selfie em tempo real', 'Documentos do veículo'])
+    expect(docs).toEqual([
+      'BI',
+      'Carta de condução',
+      'Selfie em tempo real',
+      'Documentos do veículo',
+    ])
     expect(w.find('img').attributes('alt')).toBe(
       'Motorista da Boleia a receber passageiros à porta de um hotel',
     )
@@ -44,7 +49,9 @@ describe('lower sections', () => {
 
   it('footer has no social links until URLs exist', () => {
     const w = mount(SiteFooter, { global })
-    expect(w.find('a[href*="instagram"], a[href*="facebook"], a[href*="linkedin"]').exists()).toBe(false)
+    expect(w.find('a[href*="instagram"], a[href*="facebook"], a[href*="linkedin"]').exists()).toBe(
+      false,
+    )
     expect(w.text()).not.toContain('[Instagram]')
   })
 

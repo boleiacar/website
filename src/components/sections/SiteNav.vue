@@ -23,7 +23,9 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKey))
 <template>
   <nav class="relative">
     <div class="container-page flex items-center gap-6 py-5 md:gap-8 md:py-7">
-      <a href="/" class="shrink-0"><img :src="wordmark" alt="Boleia" class="h-8 w-auto lg:h-9" /></a>
+      <a href="/" class="shrink-0"
+        ><img :src="wordmark" alt="Boleia" class="h-8 w-auto lg:h-9"
+      /></a>
       <div class="hidden grow gap-7 text-[15px] md:flex">
         <a
           v-for="l in links"

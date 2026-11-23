@@ -11,7 +11,9 @@ describe('hero picture', () => {
     const phone = w.find('picture source[media="(max-width: 639px)"][type="image/webp"]')
     expect(phone.attributes('srcset')).toContain('luanda-640')
     expect(phone.attributes('srcset')).toContain('luanda-1024')
-    const large = w.findAll('picture source[type="image/webp"]').find((s) => !s.attributes('media'))!
+    const large = w
+      .findAll('picture source[type="image/webp"]')
+      .find((s) => !s.attributes('media'))!
     expect(large.attributes('srcset')).toContain('road-2560')
     expect(large.attributes('sizes')).toBe('100vw')
   })

@@ -13,7 +13,12 @@ const { t } = useI18n()
     class="relative isolate flex min-h-[max(600px,92svh)] flex-col overflow-hidden sm:min-h-[680px] lg:min-h-[min(860px,100svh)]"
   >
     <picture class="absolute inset-0 -z-20">
-      <source media="(max-width: 639px)" type="image/webp" :srcset="hero.phone.webp" sizes="100vw" />
+      <source
+        media="(max-width: 639px)"
+        type="image/webp"
+        :srcset="hero.phone.webp"
+        sizes="100vw"
+      />
       <source media="(max-width: 639px)" type="image/jpeg" :srcset="hero.phone.jpg" sizes="100vw" />
       <source type="image/webp" :srcset="hero.wide.webp" sizes="100vw" />
       <source type="image/jpeg" :srcset="hero.wide.jpg" sizes="100vw" />

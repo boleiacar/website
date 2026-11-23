@@ -14,10 +14,19 @@ const items = [
 <template>
   <section class="border-y border-border">
     <ul
-      class="mx-auto m-0 flex max-w-[1200px] list-none flex-wrap justify-between gap-x-10 gap-y-4 px-6 py-5 text-[15px] text-muted"
+      class="container-page m-0 grid list-none grid-cols-2 gap-x-6 gap-y-4 py-5 text-sm text-muted sm:text-[15px] lg:grid-cols-4 lg:py-6"
     >
-      <li v-for="i in items" :key="i.key" class="flex items-center gap-2.5">
-        <component :is="i.icon" :size="20" class="text-primary" aria-hidden="true" />
+      <li
+        v-for="i in items"
+        :key="i.key"
+        class="flex items-start gap-2.5 lg:items-center lg:justify-center"
+      >
+        <component
+          :is="i.icon"
+          :size="20"
+          class="mt-px shrink-0 text-primary lg:mt-0"
+          aria-hidden="true"
+        />
         {{ t(i.key) }}
       </li>
     </ul>

@@ -36,7 +36,10 @@ const en: Messages = {
     tabDriver: "I'm a driver",
     passenger: [
       { t: 'Search', d: "Enter where you're going and when." },
-      { t: 'Book', d: 'Choose a ride, see the driver, car, rating and price, and reserve your seat.' },
+      {
+        t: 'Book',
+        d: 'Choose a ride, see the driver, car, rating and price, and reserve your seat.',
+      },
       {
         t: 'Pay securely',
         d: "Pay by card in the app. If a trip is cancelled, you're refunded automatically.",

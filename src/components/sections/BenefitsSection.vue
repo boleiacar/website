@@ -19,23 +19,30 @@ const items = () => (tm('benefits.items') as Item[]).map((i) => ({ t: rt(i.t), d
 </script>
 
 <template>
-  <section id="vantagens" class="scroll-mt-6 border-y border-border">
-    <div class="mx-auto flex max-w-[1200px] flex-col gap-12 px-6 py-24 md:py-30">
-      <div class="flex max-w-[640px] flex-col gap-4">
-        <span class="text-[13px] tracking-[.08em] text-primary uppercase">{{ t('benefits.eyebrow') }}</span>
-        <h2 class="m-0 text-[clamp(32px,4vw,48px)] leading-[1.1] font-semibold">{{ t('benefits.title') }}</h2>
+  <section id="vantagens" class="scroll-mt-6 border-y border-border py-16 sm:py-22 lg:py-28">
+    <div class="container-page flex flex-col gap-10 lg:gap-12">
+      <div class="flex max-w-[680px] flex-col gap-4">
+        <span class="text-[13px] tracking-[.08em] text-primary uppercase">{{
+          t('benefits.eyebrow')
+        }}</span>
+        <h2 class="m-0 text-[clamp(1.875rem,1.3rem+2.2vw,3rem)] leading-[1.1] font-semibold">
+          {{ t('benefits.title') }}
+        </h2>
       </div>
-      <ul class="m-0 grid list-none grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4 p-0">
+      <ul class="m-0 grid list-none grid-cols-1 gap-3 p-0 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
         <li
           v-for="(b, i) in items()"
           :key="b.t"
           data-test="benefit"
-          class="flex flex-col gap-3.5 rounded-2xl border border-border bg-surface p-7"
+          class="flex flex-col gap-3 rounded-2xl border border-border bg-surface p-6 lg:gap-3.5 lg:p-7"
+          :class="i === 8 && 'sm:col-span-2 lg:col-span-1'"
         >
-          <span class="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+          <span
+            class="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-primary"
+          >
             <component :is="icons[i]" :size="24" aria-hidden="true" />
           </span>
-          <h3 class="m-0 text-[19px] font-semibold">{{ b.t }}</h3>
+          <h3 class="m-0 text-lg font-semibold lg:text-[19px]">{{ b.t }}</h3>
           <p class="m-0 text-[15px] leading-relaxed text-muted">{{ b.d }}</p>
         </li>
       </ul>
