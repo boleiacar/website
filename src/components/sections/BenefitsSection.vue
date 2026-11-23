@@ -19,7 +19,7 @@ const items = () => (tm('benefits.items') as Item[]).map((i) => ({ t: rt(i.t), d
 </script>
 
 <template>
-  <section id="vantagens" class="scroll-mt-6 border-y border-border bg-[#0b0e10]">
+  <section id="vantagens" class="scroll-mt-6 border-y border-border">
     <div class="mx-auto flex max-w-[1200px] flex-col gap-12 px-6 py-24 md:py-30">
       <div class="flex max-w-[640px] flex-col gap-4">
         <span class="text-[13px] tracking-[.08em] text-primary uppercase">{{ t('benefits.eyebrow') }}</span>

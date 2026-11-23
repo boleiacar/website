@@ -134,7 +134,7 @@
   - Driver: a "Passo 6 de 6" progress bar (6 segments, all filled), price per seat "700" with −/+ circle buttons, "Preço recomendado", and the yellow Publicar viagem button. All controls are inert `<span>`s, not buttons.
 
 - [ ] **Step 1: Write failing tests:**
-  - `it('passenger screen shows sample data only')`: the text contains "Ana Manuel" and "Talatona", and does not match `/@|\.com\b/`.
+  - `it('passenger screen shows sample data only')`: the text contains "Ana Manuel" and "Talatona", and does not match an email pattern (`/@|\.com\b/`).
   - `it('phone frame never exceeds its container')`: the root has the classes `max-w-full` and `w-[340px]`.
   - `it('mockup controls are not focusable')`: the phone has no `button`, `a` or `input` elements.
   - `it('driver screen shows the recommended fare')`: the text contains "700" and "Preço recomendado".
@@ -189,6 +189,6 @@
 - Modify: `CLAUDE.md` (if the layout changed), `public/og-image.png` (optional, 1200×630, wordmark on `#040608`; skip it if it can't be made without new tooling)
 
 - [ ] **Step 1: Run** `pnpm lint && pnpm test --run && pnpm build`. Expected: all pass, with no TypeScript errors.
-- [ ] **Step 2: Check the personal data.** Run `git ls-files | grep -E '1000590981|1000590982|1000590984'` and `grep -rniE 'the owner name and email' src index.html public`. Expected: no output from either.
+- [ ] **Step 2: Check the personal data.** Run `git ls-files | grep -E '1000590981|1000590982|1000590984'` and a grep of `src index.html public` for the owner's name and email. Expected: no output from either.
 - [ ] **Step 3: Check the page.** Run `pnpm preview` and open it at 360 px and 1440 px widths. Expected: no sideways scroll at 360 px; PT by default; EN switch works and survives a reload; all sections render. Report what was seen, including anything off.
 - [ ] **Step 4: Commit** with `chore: final checks and docs`.

@@ -6,7 +6,7 @@ import StoreBadge from '@/components/StoreBadge.vue'
 
 const { t } = useI18n()
 const background = {
-  backgroundImage: `linear-gradient(90deg, rgba(4,6,8,.92) 0%, rgba(4,6,8,.65) 45%, rgba(4,6,8,.15) 100%), linear-gradient(0deg, #040608 0%, rgba(4,6,8,0) 30%), url(${heroPhoto})`,
+  backgroundImage: `linear-gradient(90deg, rgba(4,6,8,.92) 0%, rgba(4,6,8,.65) 45%, rgba(4,6,8,.15) 100%), linear-gradient(0deg, var(--bg) 0%, rgba(4,6,8,0) 30%), url(${heroPhoto})`,
 }
 </script>
 
@@ -29,7 +29,7 @@ const background = {
       >
         {{ t('hero.title') }}
       </h1>
-      <p class="m-0 max-w-[560px] text-lg leading-relaxed text-[#c9cbcc] md:text-[19px]">
+      <p class="m-0 max-w-[560px] text-lg leading-relaxed text-fg/80 md:text-[19px]">
         {{ t('hero.subtitle') }}
       </p>
       <div data-test="badge-row" class="mt-2 flex flex-wrap gap-3">

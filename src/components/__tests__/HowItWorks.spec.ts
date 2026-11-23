@@ -58,4 +58,12 @@ describe('HowItWorks', () => {
     const phone = mount(HowItWorks, { global }).find('[role="img"]')
     expect(phone.element.parentElement!.classList.contains('min-w-0')).toBe(true)
   })
+
+  it('tab switch fits a 320px screen', () => {
+    // two nowrap triggers with fixed padding overflowed 320px phones in PT; on small screens the
+    // list spans the column and the triggers share it
+    const w = mount(HowItWorks, { global })
+    expect(w.find('[role="tablist"]').classes()).toContain('w-full')
+    for (const t of w.findAll('[role="tab"]')) expect(t.classes()).toContain('flex-1')
+  })
 })

@@ -26,14 +26,14 @@ const roles: Role[] = ['passenger', 'driver']
         {{ t('how.title') }}
       </h2>
       <TabsList
-        class="gap-1.5 self-start rounded-lg border border-border bg-surface p-1.5"
+        class="w-full gap-1.5 self-start rounded-lg border border-border bg-surface p-1.5 sm:w-auto"
         :aria-label="t('how.eyebrow')"
       >
         <TabsTrigger
           v-for="r in roles"
           :key="r"
           :value="r"
-          class="min-h-11 rounded-md px-5 text-[15px] text-fg data-[state=active]:bg-primary data-[state=active]:font-semibold data-[state=active]:text-on-primary"
+          class="min-h-11 flex-1 rounded-md px-3 text-[15px] sm:flex-none sm:px-5 text-fg data-[state=active]:bg-primary data-[state=active]:font-semibold data-[state=active]:text-on-primary"
         >
           {{ t(r === 'passenger' ? 'how.tabPassenger' : 'how.tabDriver') }}
         </TabsTrigger>
