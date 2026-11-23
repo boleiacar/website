@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.env*
+
+# Screenshots containing personal data (real name, email, password). Never commit.
+mobile_screenshots/1000590981.png
+mobile_screenshots/1000590982.png
+mobile_screenshots/1000590984.png

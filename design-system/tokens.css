@@ -1,0 +1,58 @@
+/* Boleia — generated from tokens.json */
+:root, [data-theme="dark"] {
+  --primary: #f1e11e;
+  --on-primary: #101828;
+  --bg: #040608;
+  --surface: #15191a;
+  --surface-toast: #232526;
+  --border: #292d2e;
+  --border-strong: #383838;
+  --text: #ffffff;
+  --text-muted: #a1a3a3;
+  --text-subtle: #9b9b9c;
+}
+:root {
+  --space-xs: 6px;
+  --space-sm: 10px;
+  --space-md: 14px;
+  --space-lg: 16px;
+  --space-gutter: 18px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --radius-xs: 4px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-pill: 999px;
+  --control-height: 48px;
+  --field-height: 55px;
+  --avatar: 52px;
+  --icon-button: 38px;
+  --checkbox: 22px;
+  --flag: 44px;
+  --icon-sm: 18px;
+  --icon-md: 20px;
+  --icon-lg: 24px;
+  --border-width: 1px;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+.hero { font-family: var(--font-sans); font-size: 31px; line-height: 36px; font-weight: 700; }
+.display-onboarding { font-family: var(--font-sans); font-size: 29px; line-height: 36px; font-weight: 600; }
+.display { font-family: var(--font-sans); font-size: 28px; line-height: 34px; font-weight: 600; }
+.title { font-family: var(--font-sans); font-size: 21px; line-height: 28px; font-weight: 500; }
+.app-bar { font-family: var(--font-sans); font-size: 20px; line-height: 26px; font-weight: 500; }
+.option-title { font-family: var(--font-sans); font-size: 18.5px; line-height: 24px; font-weight: 600; }
+.button { font-family: var(--font-sans); font-size: 17px; line-height: 22px; font-weight: 500; }
+.section { font-family: var(--font-sans); font-size: 17px; line-height: 22px; font-weight: 500; }
+.card-title { font-family: var(--font-sans); font-size: 16.5px; line-height: 22px; font-weight: 400; }
+.body { font-family: var(--font-sans); font-size: 15px; line-height: 22px; font-weight: 400; }
+.body-sm { font-family: var(--font-sans); font-size: 14.5px; line-height: 20px; font-weight: 400; }
+.tab { font-family: var(--font-sans); font-size: 14.5px; line-height: 20px; font-weight: 500; }
+.label { font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 400; }
+.caption { font-family: var(--font-sans); font-size: 13px; line-height: 18px; font-weight: 400; }
+.overline { font-family: var(--font-sans); font-size: 11px; line-height: 14px; font-weight: 400; }
+@font-face { font-family: "Plus Jakarta Sans"; src: url("fonts/PlusJakartaSans-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Plus Jakarta Sans"; src: url("fonts/PlusJakartaSans-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Plus Jakarta Sans"; src: url("fonts/PlusJakartaSans-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Plus Jakarta Sans"; src: url("fonts/PlusJakartaSans-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }

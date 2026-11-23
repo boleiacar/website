@@ -1,0 +1,253 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "Flags": {
+      "files": {
+        "flag-angola.png": {
+          "blob": "f21ba763c50d0002c430673b264e01d4",
+          "name": "flag-angola.png",
+          "size": 8505,
+          "type": "image/png"
+        },
+        "flag-uk.png": {
+          "blob": "250272b43e6c4fc07d0b23b9a0449173",
+          "name": "flag-uk.png",
+          "size": 8210,
+          "type": "image/png"
+        }
+      },
+      "name": "Flags",
+      "order": [
+        "flag-angola.png",
+        "flag-uk.png"
+      ],
+      "tile": "s"
+    },
+    "Icons": {
+      "files": {
+        "arrow-left.svg": {
+          "blob": "c114b2cc2aadb63bba96b3f95afdbb9a",
+          "name": "arrow-left.svg",
+          "size": 285,
+          "type": "image/svg+xml"
+        },
+        "bell.svg": {
+          "blob": "2bbb1a074d7d1ef1563e43674d561ae8",
+          "name": "bell.svg",
+          "size": 410,
+          "type": "image/svg+xml"
+        },
+        "calendar.svg": {
+          "blob": "c06e57d008acddef20d831ee3b78d2ab",
+          "name": "calendar.svg",
+          "size": 360,
+          "type": "image/svg+xml"
+        },
+        "check.svg": {
+          "blob": "136981cf930918237e396723cec31d1d",
+          "name": "check.svg",
+          "size": 252,
+          "type": "image/svg+xml"
+        },
+        "chevron-right.svg": {
+          "blob": "3508b02286b20ce7f0f618965ef09dbf",
+          "name": "chevron-right.svg",
+          "size": 258,
+          "type": "image/svg+xml"
+        },
+        "eye-off.svg": {
+          "blob": "9f1f917f4e92a3029f0ebc0709c11167",
+          "name": "eye-off.svg",
+          "size": 534,
+          "type": "image/svg+xml"
+        },
+        "eye.svg": {
+          "blob": "3793c3edb9ecf14ce27fc95d871a6a31",
+          "name": "eye.svg",
+          "size": 378,
+          "type": "image/svg+xml"
+        },
+        "funnel.svg": {
+          "blob": "6cc052cb0d6798f31d5c2cd34bdc7910",
+          "name": "funnel.svg",
+          "size": 384,
+          "type": "image/svg+xml"
+        },
+        "house.svg": {
+          "blob": "81453f36097be5fe803af24ef3a8b8f1",
+          "name": "house.svg",
+          "size": 401,
+          "type": "image/svg+xml"
+        },
+        "map-pin.svg": {
+          "blob": "41cf936221c7dcbc12a8d9b7d0e6c303",
+          "name": "map-pin.svg",
+          "size": 381,
+          "type": "image/svg+xml"
+        },
+        "messages-tab-crop.png": {
+          "blob": "26db11225a592b7b2510bd55abe79ad8",
+          "name": "messages-tab-crop.png",
+          "size": 975,
+          "type": "image/png"
+        },
+        "navigation-2.svg": {
+          "blob": "03f62648c00140a6c1c84aa4ca7e1068",
+          "name": "navigation-2.svg",
+          "size": 281,
+          "type": "image/svg+xml"
+        },
+        "search.svg": {
+          "blob": "0dd21af084bf87867931dd40f31aa369",
+          "name": "search.svg",
+          "size": 296,
+          "type": "image/svg+xml"
+        },
+        "user.svg": {
+          "blob": "13325c09e1c21847a274a748e7025b59",
+          "name": "user.svg",
+          "size": 318,
+          "type": "image/svg+xml"
+        },
+        "users.svg": {
+          "blob": "2e61ad76b6759ee6008ea78d43b80fa9",
+          "name": "users.svg",
+          "size": 413,
+          "type": "image/svg+xml"
+        }
+      },
+      "name": "Icons",
+      "order": [
+        "house.svg",
+        "map-pin.svg",
+        "user.svg",
+        "bell.svg",
+        "navigation-2.svg",
+        "calendar.svg",
+        "users.svg",
+        "search.svg",
+        "arrow-left.svg",
+        "eye.svg",
+        "eye-off.svg",
+        "funnel.svg",
+        "check.svg",
+        "chevron-right.svg",
+        "messages-tab-crop.png"
+      ],
+      "tile": "xs"
+    },
+    "Logos": {
+      "files": {
+        "boleia-pin-app.png": {
+          "blob": "4ffbc340ae9786c5f4f99a8950b05f92",
+          "name": "boleia-pin-app.png",
+          "size": 7429,
+          "type": "image/png"
+        },
+        "boleia-pin.svg": {
+          "blob": "f78d91bb81395b7c359ab2524dc9a9c7",
+          "name": "boleia-pin.svg",
+          "size": 1743,
+          "type": "image/svg+xml"
+        },
+        "boleia-wordmark-dark.svg": {
+          "blob": "4846f85ca938f46744cfba5ee5ce8c21",
+          "name": "boleia-wordmark-dark.svg",
+          "size": 5033,
+          "type": "image/svg+xml"
+        },
+        "boleia-wordmark.svg": {
+          "blob": "db01443264302f3db0ea62a24a267e5e",
+          "name": "boleia-wordmark.svg",
+          "size": 5033,
+          "type": "image/svg+xml"
+        },
+        "boleia-wordmark~402x.png": {
+          "blob": "f4968e7835c3349234905e75645831d6",
+          "name": "boleia-wordmark@2x.png",
+          "size": 70636,
+          "type": "image/png"
+        }
+      },
+      "name": "Logos",
+      "order": [
+        "boleia-wordmark.svg",
+        "boleia-wordmark-dark.svg",
+        "boleia-pin.svg",
+        "boleia-wordmark@2x.png",
+        "boleia-pin-app.png"
+      ],
+      "tile": "l"
+    },
+    "Photography": {
+      "files": {
+        "onboarding-1.jpg": {
+          "blob": "5dfdf04e08206fe53d31014c78c60a06",
+          "name": "onboarding-1.jpg",
+          "size": 116944,
+          "type": "image/jpeg"
+        },
+        "onboarding-2.jpg": {
+          "blob": "9806bd914e7f1841590fd20d15fe5fdc",
+          "name": "onboarding-2.jpg",
+          "size": 133976,
+          "type": "image/jpeg"
+        },
+        "onboarding-3.jpg": {
+          "blob": "52749400306daee66fc92d9dccbf2bdb",
+          "name": "onboarding-3.jpg",
+          "size": 128916,
+          "type": "image/jpeg"
+        },
+        "welcome-hero.jpg": {
+          "blob": "cdef87ac8927e7ff2e814bf79354bbec",
+          "name": "welcome-hero.jpg",
+          "size": 75471,
+          "type": "image/jpeg"
+        }
+      },
+      "name": "Photography",
+      "order": [
+        "onboarding-1.jpg",
+        "onboarding-2.jpg",
+        "onboarding-3.jpg",
+        "welcome-hero.jpg"
+      ],
+      "tile": "l"
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-11-23T18:02:10Z",
+    "v": 1
+  },
+  "docs": {
+    "sections": []
+  },
+  "groups": [
+    "Logos",
+    "Photography",
+    "Icons",
+    "Flags"
+  ],
+  "lastChange": {
+    "at": "2026-11-23T18:02:10Z",
+    "by": "owner",
+    "note": "Built from 11 Android screenshots of the Boleia app.",
+    "via": "Claude (chat)"
+  },
+  "layout": "files",
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18"
+    },
+    {
+      "name": "react-dom",
+      "version": "18"
+    }
+  ],
+  "namespace": "Boleia",
+  "sections": {},
+  "title": "Boleia"
+}
