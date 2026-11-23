@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import wordmark from '@ds/assets/Logos/boleia-wordmark.svg'
+import HeroSection from '@/components/sections/HeroSection.vue'
+import TrustStrip from '@/components/sections/TrustStrip.vue'
 </script>
 
 <template>
+  <HeroSection />
   <main>
-    <img :src="wordmark" alt="Boleia" />
+    <TrustStrip />
   </main>
 </template>
