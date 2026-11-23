@@ -35,3 +35,20 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
+
+@utility container-page {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 20px;
+  @media (width >= 40rem) {
+    padding-inline: 32px;
+  }
+  @media (width >= 64rem) {
+    max-width: 1280px;
+    padding-inline: 48px;
+  }
+  @media (width >= 96rem) {
+    max-width: 1440px;
+  }
+}
