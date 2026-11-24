@@ -11,3 +11,6 @@ dist/
 mobile_screenshots/1000590981.png
 mobile_screenshots/1000590982.png
 mobile_screenshots/1000590984.png
+
+# Project-only GitHub CLI login (credentials). Never commit.
+.gh/
